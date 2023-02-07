@@ -141,8 +141,11 @@ for mode_index in range(4):
     pyplot.legend()
     pyplot.show()
 
+total = journey_cumulative[0][-1] + journey_cumulative[1][-1] + journey_cumulative[2][-1] + journey_cumulative[3][-1]
+
 print(f"Miles traveled on foot: {journey_cumulative[0][-1]}")
 print(f"Miles traveled by bike: {journey_cumulative[1][-1]}")
 print(f"Miles traveled by motor vehicle: {journey_cumulative[2][-1]}")
 print(f"Miles traveled by rail: {journey_cumulative[3][-1]}")
-print(len(journey_cumulative[0]))
+print(f"Total miles travelled: {total}")
+
